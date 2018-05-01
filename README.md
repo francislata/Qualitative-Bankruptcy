@@ -18,23 +18,25 @@ Based from the dataset, the following qualitative features are used to determine
 - Competitiveness
 - Operating Risk
 
-The descriptions for these variables are described in this [paper](https://pdfs.semanticscholar.org/e9f9/1b103539087b2df1edf40d13de455417e270.pdf) in section 2 titled *Data mining techniques for extracting experts’ decision rules*.
+The descriptions for these variables are described in this [paper](https://pdfs.semanticscholar.org/e9f9/1b103539087b2df1edf40d13de455417e270.pdf) in section 2 titled **Data mining techniques for extracting experts’ decision rules**.
 
 ### Models
-There are two models in this project: *support vector machine* and *logistic regression* models.
+There are two models in this project: **support vector machine** and **logistic regression** models.
 
-*1) Logistic regression*
+**1) Logistic regression**
+
 This model has been chosen due to the binary classification capabilities. This is a go-to model for binary classification problems, as it is the case for this project.
 
-*2) Support vector machine*
+**2) Support vector machine**
+
 This model has also been chosen due to its capability to separate out binary classes by a decision boundary line. Since it maximizes the margin between the data points relative to the decision boundary line, it became an ideal model to try out for this project.
 
 ### Results
-*Phase 1*
+**Phase 1**
 Initially, all features have been used to see whether they can predict bankruptcy. As a result, I have found that *SVM is better than logistic regression*. Clearly, the SVM has separated positive and negative examples perfectly. In particular, SVM got an accuracy of 1.0 while logistic regression got 0.76.
 
-*Phase 2*
-After reading the original paper where this dataset is based from, I have found that using the *competitiveness* (i.e., the company's competitive advantage) and *financial flexibility* (i.e., the ability of a company to receive financial support from third parties) are the key features in bankruptcy prediction.
+**Phase 2**
+After reading the original paper where this dataset is based from, I have found that using the **competitiveness** (i.e., the company's competitive advantage) and **financial flexibility** (i.e., the ability of a company to receive financial support from third parties) are the key features in bankruptcy prediction.
 
 After using these features, I have found that *SVM is still better than logistic regression*. A new improvement came in to light when the logistic regression's accuracy increased from 0.76 to 0.96. This is an increase of 0.20 in accuracy.
 
