@@ -33,9 +33,11 @@ This model has also been chosen due to its capability to separate out binary cla
 
 ### Results
 **Phase 1**
+
 Initially, all features have been used to see whether they can predict bankruptcy. As a result, I have found that *SVM is better than logistic regression*. Clearly, the SVM has separated positive and negative examples perfectly. In particular, SVM got an accuracy of 1.0 while logistic regression got 0.76.
 
 **Phase 2**
+
 After reading the original paper where this dataset is based from, I have found that using the **competitiveness** (i.e., the company's competitive advantage) and **financial flexibility** (i.e., the ability of a company to receive financial support from third parties) are the key features in bankruptcy prediction.
 
 After using these features, I have found that *SVM is still better than logistic regression*. A new improvement came in to light when the logistic regression's accuracy increased from 0.76 to 0.96. This is an increase of 0.20 in accuracy.
