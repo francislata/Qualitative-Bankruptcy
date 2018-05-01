@@ -1,0 +1,4 @@
+This project requires the following frameworks in order to run the project:
+- Pandas
+- Numpy
+- Scikit-Learn
